@@ -1,70 +1,56 @@
-# Getting Started with Create React App
+# BiteSpeed Frontend Task: Chatbot Flow Builder
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## Overview
 
-## Available Scripts
+This project is a simple Chatbot Flow Builder created using React. The goal is to make the code extensible, allowing for easy addition of new features.
 
-In the project directory, you can run:
+A chatbot flow is constructed by connecting multiple messages in sequence, determining the order of execution.
 
-### `npm start`
+## Features
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+- **Text Node**
+  - Currently supports only Text Messages.
+  - Multiple Text Nodes can be included in one flow.
+  - Nodes can be added by dragging and dropping from the Nodes Panel.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+- **Nodes Panel**
+  - Contains all types of Nodes supported by the Flow Builder.
+  - Initially includes only Message Node but is designed to be extensible for future additions.
 
-### `npm test`
+- **Edge**
+  - Connects two Nodes together.
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+- **Source Handle**
+  - Origin point for a connecting edge.
+  - Each source handle can have only one edge.
 
-### `npm run build`
+- **Target Handle**
+  - Endpoint for a connecting edge.
+  - Each target handle can have multiple edges connected to it.
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+- **Settings Panel**
+  - Replaces the Nodes Panel when a Node is selected.
+  - Includes a text field to edit the text of the selected Text Node.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+- **Save Button**
+  - Allows saving the flow.
+  - Displays an error if there are multiple Nodes and one or more Nodes have empty target handles.
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+## Libraries Used
 
-### `npm run eject`
+- [React](https://reactjs.org/)
+- [React Flow](https://reactflow.dev/)
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+## Getting Started
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+### Prerequisites
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+- Node.js
+- npm or yarn
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+### Installation
 
-## Learn More
+1. Clone the repository:
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+   git clone https://github.com/ShaliniChauhan123/Chat-Flow-Builder.git
+   cd chatbot-flow-builder
